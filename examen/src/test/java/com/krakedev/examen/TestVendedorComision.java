@@ -10,7 +10,7 @@ public class TestVendedorComision {
 
     @Test
     public void testCalcularSueldoConVentas() {
-        VendedorComision vendedor = new VendedorComision("1100223344");
+        VendedorComision vendedor = new VendedorComision("1100223344","C");
         vendedor.setComisionPorVenta(15.0);
         vendedor.setNumeroVentas(10);
 
@@ -22,7 +22,7 @@ public class TestVendedorComision {
 
     @Test
     public void testCalcularSueldoSinVentas() {
-        VendedorComision vendedor = new VendedorComision("1100223344");
+        VendedorComision vendedor = new VendedorComision("1100223344","C");
         vendedor.setComisionPorVenta(15.0);
         vendedor.setNumeroVentas(0);
 

@@ -10,7 +10,7 @@ public class TestVendedorComisionMixto {
 
     @Test
     public void testCalcularSueldoConVentas() {
-        VendedorMixto vendedor = new VendedorMixto("1100223344");
+        VendedorMixto vendedor = new VendedorMixto("1100223344", "M");
         vendedor.setSueldoFijo(1000.0);
         vendedor.setNumeroVentas(5);
 
@@ -22,7 +22,7 @@ public class TestVendedorComisionMixto {
 
     @Test
     public void testCalcularSueldoSinVentas() {
-        VendedorMixto vendedor = new VendedorMixto("1100223344");
+        VendedorMixto vendedor = new VendedorMixto("1100223344","M");
         vendedor.setSueldoFijo(1000.0);
         vendedor.setNumeroVentas(0);
 
@@ -34,7 +34,7 @@ public class TestVendedorComisionMixto {
 
     @Test
     public void testCalcularSueldoConVentasGrandes() {
-        VendedorMixto vendedor = new VendedorMixto("1100223344");
+        VendedorMixto vendedor = new VendedorMixto("1100223344","M");
         vendedor.setSueldoFijo(2000.0);
         vendedor.setNumeroVentas(10);
 
@@ -46,7 +46,7 @@ public class TestVendedorComisionMixto {
 
     @Test
     public void testCalcularSueldoConSueldoCero() {
-        VendedorMixto vendedor = new VendedorMixto("1100223344");
+        VendedorMixto vendedor = new VendedorMixto("1100223344","M");
         vendedor.setSueldoFijo(0.0);
         vendedor.setNumeroVentas(10);
 
